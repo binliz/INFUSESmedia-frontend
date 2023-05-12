@@ -1,0 +1,26 @@
+array (
+  'level' => 'fatal',
+  'message' => 'Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table \'INFUSEmedia.logs\' doesn\'t exist in /app/app/Connections/MysqlDatabase.php:47
+Stack trace:
+#0 /app/app/Connections/MysqlDatabase.php(47): PDOStatement->execute()
+#1 /app/app/Handlers/ImageCounterHandler.php(22): app\\Connections\\MysqlDatabase->getLogCount()
+#2 /app/app/App.php(30): app\\Handlers\\ImageCounterHandler->handle()
+#3 /app/public/api.php(12): app\\App->handle()
+#4 {main}
+  thrown in file /app/app/Connections/MysqlDatabase.php on line 47',
+  'trace' => 
+  array (
+    0 => 
+    array (
+      'function' => '{closure}',
+      'args' => 
+      array (
+      ),
+    ),
+  ),
+  'additional' => 
+  array (
+    'hostname' => 'a8852951bea9',
+    'requestUri' => '/api/imageCounter?imageId=3',
+  ),
+)
